@@ -90,10 +90,10 @@
 
 
 			if (include(short_months, month) == true) {
-				d_size = day*(m_size[month]/30);
+				d_size = day*(m_size[month]/30)+25*(1/day);
 			}
 			else {
-				d_size = day*(m_size[month]/31);
+				d_size = day*(m_size[month]/31)+25*(1/day);
 			}
 
 			var d=c.getContext("2d");
