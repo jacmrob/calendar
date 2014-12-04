@@ -93,7 +93,7 @@
 			b.shadowColor="#52525C";
 			b.shadowBlur=40;
 
-			d_size = day*(m_size[month]/30 + 25*(1/day));//+ 25*(1/day);
+			d_size = day*(m_size[month]/30;//+ 25*(1/day);
 			// if (include(short_months, month) == true) {
 			// 	d_size = day*(m_size[month]/30)+ 25*(1/day);
 			// }
@@ -104,7 +104,7 @@
 
 			var d=c.getContext("2d");
 			d.beginPath();
-			d.arc(400,400,d_size-5,0,2*Math.PI);
+			d.arc(400,400,d_size+5,0,2*Math.PI);
 			d.fillStyle="#B162E3";
 			d.fill()
 			d.strokeStyle="#B162E3";
